@@ -27,6 +27,7 @@ Ensure you have the latest ['stable'](https://github.com/neovim/neovim/releases/
 - [Neovim](https://neovim.io/) (Version 0.9 or Later)
 - [Nerd Font](https://www.nerdfonts.com/) - I use Iosevka Nerd Font
 - [Ripgrep](https://github.com/BurntSushi/ripgrep) - For Telescope Fuzzy Finder
+- [Golang](https://go.dev/)
 - XCode Command Line Tools
 - If working with TypeScript/JavaScript and the TypeScript language server like me, you might need to install Node.
 
@@ -37,6 +38,7 @@ brew install --cask ghostty
 brew install neovim
 brew install ripgrep
 brew install node
+brew install go
 ```
 
 For XCode Command Line Tools do:
