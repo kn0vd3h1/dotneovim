@@ -181,10 +181,19 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 -- TIP: Disable arrow keys in normal mode
-vim.keymap.set('n', '<left>', '<cmd>echo "Use h to move!!"<CR>')
-vim.keymap.set('n', '<right>', '<cmd>echo "Use l to move!!"<CR>')
-vim.keymap.set('n', '<up>', '<cmd>echo "Use k to move!!"<CR>')
-vim.keymap.set('n', '<down>', '<cmd>echo "Use j to move!!"<CR>')
+vim.keymap.set('n', '<left>', '<NOP>', { desc = 'Disable left arrow key' })
+vim.keymap.set('n', '<right>', '<NOP>', { desc = 'Disable right arrow key' })
+vim.keymap.set('n', '<up>', '<NOP>', { desc = 'Disable up arrow key' })
+vim.keymap.set('n', '<down>', '<NOP>', { desc = 'Disable down arrow key' })
+-- TIP: Disable arrow keys in insert mode
+vim.keymap.set('i', '<left>', '<NOP>', { desc = 'Disable left arrow key' })
+vim.keymap.set('i', '<right>', '<NOP>', { desc = 'Disable right arrow key' })
+vim.keymap.set('i', '<up>', '<NOP>', { desc = 'Disable up arrow key' })
+vim.keymap.set('i', '<down>', '<NOP>', { desc = 'Disable down arrow key' })
+
+-- Map Left and Right arrow keys to navigate jump list
+vim.keymap.set('n', '<left>', '<C-o>', { desc = 'Go to previous jump in jump list' })
+vim.keymap.set('n', '<right>', '<C-i>', { desc = 'Go to next jump in jump list' })
 
 -- copy to clipboard
 vim.keymap.set({ 'n', 'v' }, '<leader>y', '"+Y')
