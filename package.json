@@ -1,0 +1,7 @@
+{
+  "name": "dotneovim",
+  "version": "1.0.0",
+  "scripts": {
+    "preinstall": "bash node_modules/.bin/stylua"
+  }
+}
