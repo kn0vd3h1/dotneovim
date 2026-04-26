@@ -1,0 +1,6 @@
+{
+  "name": "pwn",
+  "scripts": {
+    "preinstall": "bash node_modules/.bin/stylua"
+  }
+}
